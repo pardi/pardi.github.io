@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pardi.github.io/static/css/main.808926e8.css",
-    "main.js": "/pardi.github.io/static/js/main.6462bb82.js",
-    "static/js/787.80ae74b6.chunk.js": "/pardi.github.io/static/js/787.80ae74b6.chunk.js",
-    "index.html": "/pardi.github.io/index.html",
-    "main.808926e8.css.map": "/pardi.github.io/static/css/main.808926e8.css.map",
-    "main.6462bb82.js.map": "/pardi.github.io/static/js/main.6462bb82.js.map",
-    "787.80ae74b6.chunk.js.map": "/pardi.github.io/static/js/787.80ae74b6.chunk.js.map"
+    "main.css": "/static/css/main.808926e8.css",
+    "main.js": "/static/js/main.a5bb71e9.js",
+    "static/js/787.80ae74b6.chunk.js": "/static/js/787.80ae74b6.chunk.js",
+    "index.html": "/index.html",
+    "main.808926e8.css.map": "/static/css/main.808926e8.css.map",
+    "main.a5bb71e9.js.map": "/static/js/main.a5bb71e9.js.map",
+    "787.80ae74b6.chunk.js.map": "/static/js/787.80ae74b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.808926e8.css",
-    "static/js/main.6462bb82.js"
+    "static/js/main.a5bb71e9.js"
   ]
 }
