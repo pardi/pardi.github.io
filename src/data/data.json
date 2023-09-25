@@ -1,0 +1,44 @@
+{
+    "projects":
+        [
+            {
+                "img": "https://picsum.photos/id/0/400",
+                "text": "Text1"
+            },
+            {
+                "img": "https://picsum.photos/id/1/400",
+                "text": "Text2"
+            },
+            {
+                "img": "https://picsum.photos/id/2/400",
+                "text": "Text3"
+            },
+            {
+                "img": "https://picsum.photos/id/3/400",
+                "text": "Text4"
+            },
+            {
+                "img": "https://picsum.photos/id/4/400",
+                "text": "Text5"
+            }
+        ],
+    "cvEntries": 
+        [
+            {
+                "role": "Tech Lead Robotics and Controls",
+                "company": "Automata Technologies Limited",
+                "period": "2022-2023",
+                "description": "stuff I have done",
+                "videos": "",
+                "companyWebsite": ""
+            },
+            {
+                "role": "Robotics Engineer",
+                "company": "Automata Technologies Limited",
+                "period": "2021-2022",
+                "description": "stuff I have done",
+                "videos": "",
+                "companyWebsite": ""
+            }
+        ]
+}
