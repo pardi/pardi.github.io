@@ -1,7 +1,9 @@
+import styles from '../styles/About.module.scss'
+
 const About = ({ type }) => {
 	return (
 		<>
-		<div className="about">
+		<div className={styles.about}>
 			<ul>
 				<h3>External links</h3>
 				<li>

@@ -1,12 +1,22 @@
-const Section = ({ id, text, type }) => {
+import PropTypes from 'prop-types'
+import styles from '../styles/Sections.module.scss'
+
+const Section = ({ name, type, body }) => {
+
+  console.log(styles.section)
   return (
     <>
-        <div className="anchor-padding" id={id + "-padding"}></div>
-        <div id={id} className={type === 'even' ? "container even": "container odd"}>
-            <h1> {text} </h1>
+        <div className="anchor" id={name + "-anchor"}></div>
+        <div id={name} className={styles.aboutEmpty}>
+            {body}
         </div>
     </>
-  )
+  );
+}
+
+Section.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.oneOf(["empty", "full"]).isRequired
 }
 
 export default Section

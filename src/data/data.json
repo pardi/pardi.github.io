@@ -40,5 +40,23 @@
                 "videos": "",
                 "companyWebsite": ""
             }
-        ]
+        ],
+    "menu":
+        [
+            "home",
+            "projects",
+            "work",
+            "about"
+        ],
+    "interests": 
+        [
+            "coding", 
+            "ML/AI", 
+            "control", 
+            "DRL", 
+            "robotics", 
+            "research", 
+            "agile", 
+            "leadership"
+        ] 
 }

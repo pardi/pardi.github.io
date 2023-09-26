@@ -1,5 +1,6 @@
 import { useState } from "react"
 import PropTypes from 'prop-types'
+import styles from '../styles/Work.module.scss'
 
 export const Work = ({ cvItems }) => {
 
@@ -7,13 +8,12 @@ export const Work = ({ cvItems }) => {
 
     return (
         <>
-        <div className="anchor-padding" id={"work-padding"}></div>
-        <div className="timeline">
-            <ul className="timeline-container">
+        <div className={styles.timeline}>
+            <ul className={styles.timelineContainer}>
                 {
                     cvItems.map( (item, index) => {
                         return (<>
-                        <li key={index} className={"text-box" + (activeCard === index? ' active': '')} onMouseEnter={()=>setActiveCard(index)} onMouseLeave={()=> setActiveCard(-1)}>
+                        <li key={index} className={(activeCard === index? styles.textBoxActive: styles.textBox)} onMouseEnter={()=>setActiveCard(index)} onMouseLeave={()=> setActiveCard(-1)}>
                             <h2>{item.role}</h2>
                             <h3><small>{item.period}</small> - {item.company}</h3>
                             <p>{item.description}</p>
@@ -23,13 +23,12 @@ export const Work = ({ cvItems }) => {
                 }
             </ul>
         </div>
-    
     </>
     )
   }
   
 Work.propTypes = {
-    cvItems: PropTypes.arrayOf(PropTypes.string),
+    cvItems: PropTypes.array,
 }
 
 

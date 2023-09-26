@@ -1,22 +1,29 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import styles from '../styles/Header.module.scss'
 
-const Header = () => {
+const Header = ({ menu }) => {
   return (
     <>
-    <div className='header shadow' /> 
-    <div className='header'>
-        <p className='left'>
+    <div className={styles.headerShadow} /> 
+    <div className={styles.header}>
+        <p className={styles.left}>
             Tommaso Pardi 
         </p>
-        <nav className='right'>
-            <a href="#home-padding">HOME</a>
-            <a href="#projects-padding">PROJECTS</a>
-            <a href="#work-padding">EXPERIENCE</a>
-            <a href="#about-padding">ABOUT</a> 
+        <nav className={styles.right}>
+            {
+              menu.map((entry) => {
+                return <a key={entry} href={"#" + entry + "-anchor"}>{entry}</a>
+              })
+            }
         </nav>
     </div>
     </>
   )
+}
+
+Header.propTypes = {
+  menu: PropTypes.array
 }
 
 export default Header

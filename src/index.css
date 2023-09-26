@@ -1,7 +1,7 @@
 :root {
   --petrol: rgb(22, 172, 127);
   --odd-seq-colour: var(--petrol);
-  --even-seq-colour: white;
+  --even-seq-colour:  white;
 }
 
 html {
@@ -19,7 +19,9 @@ a:hover {
   color: var(--petrol)
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: large;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -82,29 +84,11 @@ body {
   text-transform: uppercase;
 }
 
-.section {
-  display: flex;
-  width: 100%;
-  height: 700px;
-  margin: auto;
-}
-
-.section.odd{
-  background-color: var(--odd-seq-colour);
-  color: var(--even-seq-colour);
-}
-
-.section.even{
-  background-color: var(--even-seq-colour);
-  color: var(--odd-seq-colour)
-}
 
 .home {
   padding-top: 100px;
   font-size: x-large;
 }
-
-
 
 
 .ring{
@@ -129,59 +113,6 @@ body {
   position: relative;
   margin: 80px -15px;
   margin-bottom: -110px;
-}
-
-.timeline{
-  position:relative;
-  margin: 10px 20px;
-  width: 100%;
-}
-
-.timeline ul {
-  list-style-type: none;
-  margin:0;
-}
-
-.timeline-container{
-  position:relative;
-  padding: 0px 20px;
-  width: 600px;
-}
-
-.timeline::before{
-  content: '';
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  background: var(--petrol);
-  top: 0;
-  margin-left: -3px;
-  z-index: -1;
-}
-
-.text-box{
-  position: relative;
-  padding: 5px 20px;
-  color: white;
-  background-color: var(--petrol);
-  border-radius: 6px;
-  font-size: 15px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  height: 100px;
-}
-
-.text-box.active{
-  height: 300px;
-  transition: 0.5s ease-in-out;
-}
-
-.text-box small{
-  font-style: italic;
-}
-
-.text-box:last-child{
-  margin-bottom: 0px;
 }
 
 .carousel{height: 500px;
@@ -276,20 +207,3 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.about{
-  display: flex;
-  height: 200px;
-  align-items: center;
-  justify-content:space-around;
-  color: var(--petrol)
-}
-
-.about ul{
-  list-style-type: none;
-  
-}
-
-.about a{
-  color: var(--petrol);
-  font-family: monospace;
-}
