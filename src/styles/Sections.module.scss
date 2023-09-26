@@ -48,12 +48,19 @@
     @include home;
 }
 
-
 .workFull {
     @include full;
 }
 
 .workEmpty {
+    @include empty;
+}
+
+.projectsFull {
+    @include full;
+}
+
+.projectsEmpty {
     @include empty;
 }
 

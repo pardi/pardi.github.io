@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react"
 import PropTypes from 'prop-types'
-import ProjCard from "./ProjCard"
+import Card from "./Card"
+import styles from '../styles/Carousel.module.scss'
 
 
-const ProjCarousel = ({ projList }) => {
+const Carousel = ({ projList }) => {
 
     const [idxLeft, setIdxLeft] = useState(0);
     const [idxActive, setIdxActive] = useState(1);
@@ -44,23 +45,23 @@ const ProjCarousel = ({ projList }) => {
         setIdxRight((idxRightRef.current - 1 + projList.length ) % projList.length)
     }
     return (
-		<div className="carousel"  onMouseEnter={() => setAutoPlay(false)} onMouseLeave={() => setAutoPlay(false)}>
-            <button className="btn left" onClick={shiftLeft} />
-            <div className="carousel-wrapper">
+		<div className={styles.carousel}  onMouseEnter={() => setAutoPlay(false)} onMouseLeave={() => setAutoPlay(false)}>
+            <button className={styles.btnLeft} onClick={shiftLeft} />
+            <div className={styles.carouselWrapper}>
                 {
                     projList.map((proj, index) => {
-                        return <ProjCard img={proj.img} text={proj.text} state={idxActive === index? 'active': idxLeft === index? 'left': idxRight === index? 'right': 'hidden'} />
+                        return <Card img={proj.img} text={proj.text} state={idxActive === index? "active": idxLeft === index? "left": idxRight === index? "right": "hidden"} />
                     })
                 }
             </div>
-            <button className="btn right" onClick={shiftRight} />
+            <button className={styles.btnRight} onClick={shiftRight} />
 		</div>
     )
 }
 
-ProjCarousel.propTypes = {
+Carousel.propTypes = {
     projList: PropTypes.string,
 }
 
 
-export default ProjCarousel
+export default Carousel

@@ -30,7 +30,7 @@
                 "period": "2022-2023",
                 "description": "stuff I have done",
                 "videos": "",
-                "companyWebsite": ""
+                "companyWebsite": "https://automata.tech/"
             },
             {
                 "role": "Robotics Engineer",
@@ -38,8 +38,25 @@
                 "period": "2021-2022",
                 "description": "stuff I have done",
                 "videos": "",
-                "companyWebsite": ""
+                "companyWebsite": "https://automata.tech/"
+            },
+            {
+                "role": "Research Engineer",
+                "company": "School of Advance Studies Sant'Anna",
+                "period": "2016-2018",
+                "description": "stuff I have done",
+                "videos": "",
+                "companyWebsite": "https://www.santannapisa.it/en/institute/biorobotics"
+            },
+            {
+                "role": "Software Firmware Engineer",
+                "company": "qb obotics srl",
+                "period": "2015-2016",
+                "description": "stuff I have done",
+                "videos": "",
+                "companyWebsite": "https://qbrobotics.com/"
             }
+
         ],
     "menu":
         [

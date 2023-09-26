@@ -1,10 +1,9 @@
 import Header from "./Components/Header";
 import Home from "./Components/Home"
-import Projects from "./Components/Projects";
+import Carousel from "./Components/Carousel";
 import About from "./Components/About";
 import Work from "./Components/Work";
 import data from "./data/data.json"
-import Section from "./Components/Section";
 import styles from './styles/Global.module.scss'
 
 function App() {
@@ -23,20 +22,17 @@ function App() {
         <div id="work" className={styles.workEmpty}>
           <Work cvItems={data.cvEntries}/>
         </div>
+        <div className="projects-anchor" id="projects-anchor" />
+        <div id="projects" className={styles.projectsFull}>
+          <Carousel projList={data.projects} />
+        </div> 
         <div className="about-anchor" id="about-anchor" />
         <div id="about" className={styles.aboutEmpty}>
           <About />
         </div> 
-      </div>
+        </div>
 
-    {/* 
-    <div className="body-container">
-      <Home type="odd"/>
-      <Work cvItems={data.cvEntries}/>
-      <Projects type="odd" projList={data.projects}/>
-      <About type="even" />
-      <Section  on name="about" type="full" body={<About />}/>
-    </div>  */}
+
     </>
   );
 }
