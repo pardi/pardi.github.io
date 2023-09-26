@@ -1,0 +1,61 @@
+@import 'Default.module.scss';
+
+.timeline{
+    position:relative;
+    margin: 10px 20px;
+    width: 100%;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: $petrol;
+        top: 0;
+        margin-left: -3px;
+    }
+    & ul{
+        list-style-type: none;
+        margin:0;
+    }
+
+}
+
+.timelineContainer{
+    position:relative;
+    padding: 0px 20px;
+    width: 600px;
+}
+
+
+@mixin textBox{
+    position: relative;
+    padding: 5px 20px;
+    color: white;
+    background-color: $petrol;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 100px;
+}
+
+.textBox{
+    @include textBox;
+
+    & small{
+        font-style: italic;
+    }
+}
+
+.textBox:last-child{
+    margin-bottom: 0px;
+}
+      
+
+.textBoxActive{
+    @include textBox;
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+

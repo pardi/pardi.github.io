@@ -1,0 +1,69 @@
+@import 'Default.module.scss';
+
+@mixin section {
+    display: flex;
+    width: 100%;
+    
+}
+
+@mixin full{
+    @include section;
+    background-color: $colourUp;
+    color: $colourDown;
+    
+    & a{
+        color: $colourDown;
+    }
+}
+
+@mixin empty{
+    @include section;
+    background-color: $colourDown;
+    color: $colourUp;
+
+    & a{
+        color: $colourUp;
+    }
+}
+  
+.aboutFull {
+    @include full;
+}
+
+.aboutEmpty {
+    @include empty;
+}
+
+@mixin home{
+    height: $homeHeight;
+}
+
+.homeFull {
+    @include full;
+    @include home;
+}
+
+.homeEmpty {
+    @include empty;
+    @include home;
+}
+
+
+.workFull {
+    @include full;
+}
+
+.workEmpty {
+    @include empty;
+}
+
+.section-anchor {
+    height: $headerHeight;  /* Same height as your header */
+    margin-top: -$headerHeight;  /* Negative margin pulls the anchor up */
+    visibility: hidden;
+    pointer-events: none;  /* Allows clicks to pass through */
+}
+
+
+
+

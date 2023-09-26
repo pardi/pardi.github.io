@@ -1,0 +1,58 @@
+@import 'Default.module.scss';
+
+
+@mixin header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;     /* Full width */
+    display:flex;
+    height: $headerHeight;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    color: $petrol;
+    z-index: 1000;
+}
+
+.header{
+    @include header;
+}
+  
+.headerShadow{
+    @include header;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+}
+
+.right {
+    flex: 2;  
+    display: flex;
+    align-items: center;  /* Vertical alignment */
+    padding-right: 20px;
+    justify-content: flex-end;
+    
+    & a {
+        color: $petrol;
+        margin-left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    & a:hover{
+        font-size: x-large;
+        text-decoration: overline;
+        color: $petrol
+    }
+
+}
+
+.left{
+    flex: 3;  
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;  /* Distributes the links evenly */
+    align-items: center;  /* Vertical alignment */
+    box-sizing: border-box; /* So that padding and border are included in the width */
+    text-transform: uppercase;
+    padding-left: 20px;
+}
