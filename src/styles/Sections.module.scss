@@ -64,13 +64,15 @@
     @include empty;
 }
 
-.section-anchor {
+.sectionAnchor {
     height: $headerHeight;  /* Same height as your header */
     margin-top: -$headerHeight;  /* Negative margin pulls the anchor up */
     visibility: hidden;
     pointer-events: none;  /* Allows clicks to pass through */
 }
 
-
+.menuTitle{
+    
+}
 
 

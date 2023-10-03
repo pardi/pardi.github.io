@@ -20,7 +20,7 @@ const Card = ({ img, text, state }) => {
 
     return (
         <div className={getStyle(state)}>
-            <img src={img} className={styles.containerImg} />
+            <img src={img} className={styles.containerImg} alt="" />
             <h3 className={styles.textBoxCard}>
                 {text}
             </h3>

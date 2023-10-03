@@ -12,21 +12,21 @@ function App() {
     <>
   
       <Header menu={data.menu}/>
-      
       <div className={styles.bodyContainer}>
-        <div className="home-anchor" id="home-anchor" />
+        <div className={styles.sectionAnchor} id="home-anchor" />
         <div id="home" className={styles.homeFull}>
           <Home wordsList={data.interests}/>
         </div>
-        <div className="work-anchor" id="work-anchor" />
+        <div className={styles.sectionAnchor} id="work-anchor" />
+        <h1 className="menuTitle">WORK</h1>
         <div id="work" className={styles.workEmpty}>
           <Work cvItems={data.cvEntries}/>
         </div>
-        <div className="projects-anchor" id="projects-anchor" />
+        <div className={styles.sectionAnchor} id="projects-anchor" />
         <div id="projects" className={styles.projectsFull}>
           <Carousel projList={data.projects} />
         </div> 
-        <div className="about-anchor" id="about-anchor" />
+        <div className={styles.sectionAnchor} id="about-anchor" />
         <div id="about" className={styles.aboutEmpty}>
           <About />
         </div> 
