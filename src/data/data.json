@@ -28,32 +28,36 @@
                 "role": "Tech Lead Robotics and Controls",
                 "company": "Automata Technologies Limited",
                 "period": "2022-2023",
-                "description": "stuff I have done",
-                "videos": "",
+                "description": "As Tech Lead for robotics and control, I work to create robust and flexible architectures for our robotics systems. Together with a team of 5 extremely capable engineers, I lead the development of high and low level software, whilst maintaining the higher standards of coding practises",
+                "keywords": "ROS2, Project Management, Algorithms, Artificial Intelligence (AI), Systems Engineering, Engineering, Agile Methodologies, Leadership, Team Leadership, Git, Computer Vision, Robot Operating System (ROS), Coding Practices",
+                "videos": "https://www.youtube.com/watch?v=i5C7j0gkluE",
                 "companyWebsite": "https://automata.tech/"
             },
             {
                 "role": "Robotics Engineer",
                 "company": "Automata Technologies Limited",
                 "period": "2021-2022",
-                "description": "stuff I have done",
-                "videos": "",
+                "description": "As Robotics Engineer, I work to create algorithms and analysis for our main product (EVA robot) to improve its reliability, safety, and precision. I propose new technical methodologies, drive projects for new features from start to completion, and tackle green-field projects by balancing exploration of new possibilities with business priorities. I maintain our outstanding codebase by daily contributing to code writing and reviewing.",
+                "keywords": "Planning, Data Analysis, Physics, Algorithms, Engineering, Leadership, Git, Robotics",
+                "videos": "https://www.youtube.com/watch?v=Df_XHu2HRrQ",
                 "companyWebsite": "https://automata.tech/"
             },
             {
                 "role": "Research Engineer",
                 "company": "School of Advance Studies Sant'Anna",
                 "period": "2016-2018",
-                "description": "stuff I have done",
-                "videos": "",
+                "description": "As researcher engineer, I develop algorithms for controlling UAVs and UGVs using bio-inspired controllers. I have built the UAVs used in our testings from scratch. My team and I deployed successfully the system to the MBZIRC challenge, where our algorithms for controlling the robot were bridged with marker recognitions techniques using the onboard camera.",
+                "keywords": "Engineering, Academic Background, Computer Vision, Drones, UAV, Control, C++, Robot Operating System (ROS)",
+                "videos": "https://www.youtube.com/watch?v=780gnSG1nXs",
                 "companyWebsite": "https://www.santannapisa.it/en/institute/biorobotics"
             },
             {
                 "role": "Software Firmware Engineer",
-                "company": "qb obotics srl",
+                "company": "qbrobotics srl",
                 "period": "2015-2016",
-                "description": "stuff I have done",
-                "videos": "",
+                "description": "As software firmware engineer, I have been responsible to optimise the firmware written in C of the two flagship product of the company. My optimisation improved the overall system speed of 100% and required a drastic change of the interfaces for coping with the increased throughput. However, the resulting increase in speed allowed more low-latency communication and utilisation of the devices by the user. In parallel to to my effort on the firmware side, I have been developing controller for multiple degrees of freedom arms.",
+                "keywords": "Engineering, Git, Optimization, Firmware, C++, Robotic Design, Robotics, Simulink, Robot Operating System (ROS)",
+                "videos": "https://www.youtube.com/watch?v=5n0vkyiKV24",
                 "companyWebsite": "https://qbrobotics.com/"
             }
 
