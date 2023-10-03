@@ -28,11 +28,16 @@
   border: 10px;
   padding: 10px;
   transform: scale(0.5) translate(-50%, 0%);
+  border-radius: 5%;
   transition: 0.5s ease-in-out;
 }
 
 .containerCard{
   @include containerCard;
+}
+
+.containerImg{
+  border-radius: 5%;
 }
 
 .containerCardLeft{
