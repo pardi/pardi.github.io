@@ -17,6 +17,16 @@ export const Work = ({ cvItems }) => {
                             <h2>{item.role}</h2>
                             <h3><small>{item.period}</small> - {item.company}</h3>
                             <p>{item.description}</p>
+                            <div className={styles.divData}>
+                                <div>
+                                {
+                                    item.desc_items.map( (descItem) => {
+                                        return <p>{"* " + descItem}</p>;
+                                    })
+                                }
+                                </div>
+                                <iframe title={"video" + index} width="460" height="180" src={item.videos + "?autoplay=0&mute=1&loop=1&control=0"} />
+                            </div>
                         </li></>
                         )}
                     )

@@ -60,7 +60,7 @@ const Carousel = ({ projList }) => {
 }
 
 Carousel.propTypes = {
-    projList: PropTypes.string,
+    projList: PropTypes.array,
 }
 
 

@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Work from "./Components/Work";
 import data from "./data/data.json"
 import styles from './styles/Global.module.scss'
+// import CardS from './Components/testCard'
 
 function App() {
   
@@ -18,7 +19,7 @@ function App() {
           <Home wordsList={data.interests}/>
         </div>
         <div className={styles.sectionAnchor} id="work-anchor" />
-        <h1 className="menuTitle">WORK</h1>
+        <h1 className={styles.menuTitle}>WORK</h1>
         <div id="work" className={styles.workEmpty}>
           <Work cvItems={data.cvEntries}/>
         </div>
@@ -30,6 +31,11 @@ function App() {
         <div id="about" className={styles.aboutEmpty}>
           <About />
         </div> 
+        {/* <div className={styles.sectionAnchor} id="crs-anchor" /> */}
+        {/* <div id="crs" className={styles.crs}>
+          asdfasd
+          <CardS img="fabrik400.png"/>
+        </div>  */}
         </div>
 
 

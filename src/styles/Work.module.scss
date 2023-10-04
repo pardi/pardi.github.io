@@ -24,7 +24,7 @@
 .timelineContainer{
     position:relative;
     padding: 0px 20px;
-    width: 600px;
+    width: 95%;
 }
 
 
@@ -52,10 +52,14 @@
     margin-bottom: 0px;
 }
       
-
 .textBoxActive{
     @include textBox;
-    height: 300px;
+    height: 100%;
     transition: 0.5s ease-in-out;
+}
+
+.divData{
+    display: flex;
+    justify-content: space-between;
 }
 

@@ -29,8 +29,12 @@
                 "company": "Automata Technologies Limited",
                 "period": "2022-2023",
                 "description": "As Tech Lead for robotics and control, I work to create robust and flexible architectures for our robotics systems. Together with a team of 5 extremely capable engineers, I lead the development of high and low level software, whilst maintaining the higher standards of coding practises",
+                "desc_items": [ "Lead and mentored teams of up to 6 engineers",
+                "Created flexible architectures for robotics application using cutting edge framework such as AWS and ROS2",
+                "Developed outstanding code for the company stack in C++ and python",
+                "Championed good coding practices and setup CI/CD pipelines."],
                 "keywords": "ROS2, Project Management, Algorithms, Artificial Intelligence (AI), Systems Engineering, Engineering, Agile Methodologies, Leadership, Team Leadership, Git, Computer Vision, Robot Operating System (ROS), Coding Practices",
-                "videos": "https://www.youtube.com/watch?v=i5C7j0gkluE",
+                "videos": "https://www.youtube.com/embed/i5C7j0gkluE",
                 "companyWebsite": "https://automata.tech/"
             },
             {
@@ -38,8 +42,12 @@
                 "company": "Automata Technologies Limited",
                 "period": "2021-2022",
                 "description": "As Robotics Engineer, I work to create algorithms and analysis for our main product (EVA robot) to improve its reliability, safety, and precision. I propose new technical methodologies, drive projects for new features from start to completion, and tackle green-field projects by balancing exploration of new possibilities with business priorities. I maintain our outstanding codebase by daily contributing to code writing and reviewing.",
+                "desc_items": [ "Mentored junior engineers in robotics, control, and programming practices",
+                                "Owned projects from start to completion: state-of-the-art review -> selection -> implementation -> deployment in less than 1 month",
+                                "Developed features requiring to bridge mathematical and engineering competencies e.g. shuttle planning and collision detection.",
+                                "Reviewed and maintained legacy code abiding to back-compatibility policies"],
                 "keywords": "Planning, Data Analysis, Physics, Algorithms, Engineering, Leadership, Git, Robotics",
-                "videos": "https://www.youtube.com/watch?v=Df_XHu2HRrQ",
+                "videos": "https://www.youtube.com/embed/Df_XHu2HRrQ",
                 "companyWebsite": "https://automata.tech/"
             },
             {
@@ -47,8 +55,13 @@
                 "company": "School of Advance Studies Sant'Anna",
                 "period": "2016-2018",
                 "description": "As researcher engineer, I develop algorithms for controlling UAVs and UGVs using bio-inspired controllers. I have built the UAVs used in our testings from scratch. My team and I deployed successfully the system to the MBZIRC challenge, where our algorithms for controlling the robot were bridged with marker recognitions techniques using the onboard camera.",
+                "desc_items": [ "Designed architectures for multiple UAVs coordination using ROS",
+                                "Developed high-frequency vision algorithm capable to recognise specific shapes during the UAV motion",
+                                "Implemented cutting-edge controller bio-inspired by the tau-theory to land on a moving target",
+                                "Benchmarked and tested the hardware throughout the experimentation phase",
+                                "Participated to an international robotics challenge at AbuDhabi with the TheBioRobotics lab team."],
                 "keywords": "Engineering, Academic Background, Computer Vision, Drones, UAV, Control, C++, Robot Operating System (ROS)",
-                "videos": "https://www.youtube.com/watch?v=780gnSG1nXs",
+                "videos": "https://www.youtube.com/embed/780gnSG1nXs",
                 "companyWebsite": "https://www.santannapisa.it/en/institute/biorobotics"
             },
             {
@@ -56,8 +69,12 @@
                 "company": "qbrobotics srl",
                 "period": "2015-2016",
                 "description": "As software firmware engineer, I have been responsible to optimise the firmware written in C of the two flagship product of the company. My optimisation improved the overall system speed of 100% and required a drastic change of the interfaces for coping with the increased throughput. However, the resulting increase in speed allowed more low-latency communication and utilisation of the devices by the user. In parallel to to my effort on the firmware side, I have been developing controller for multiple degrees of freedom arms.",
+                "desc_items": [ "Optimised firmware for PSoC3 chipset",
+                                "Utilised DMA for passing UART messages",
+                                "Used control system like CLIK to control articulated arms",
+                                "Developed ROS interfaces for our products"],
                 "keywords": "Engineering, Git, Optimization, Firmware, C++, Robotic Design, Robotics, Simulink, Robot Operating System (ROS)",
-                "videos": "https://www.youtube.com/watch?v=5n0vkyiKV24",
+                "videos": "https://www.youtube.com/embed/5n0vkyiKV24",
                 "companyWebsite": "https://qbrobotics.com/"
             }
 
