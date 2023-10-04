@@ -6,7 +6,7 @@ const Home = ({ wordsList }) => {
     return (
         <>
         <div className={styles.home}>
-            <h1> Hi! </h1>
+            <h1>Hi!</h1>
             <h2>i am Tommaso Pardi</h2>
             <h3>a Robotics Engineer with a passion for <RandomWord wordsList={wordsList}/></h3>
         </div>
