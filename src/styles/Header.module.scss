@@ -25,12 +25,14 @@
 }
 
 .right {
+    
     flex: 2;  
     display: flex;
     align-items: center;  /* Vertical alignment */
     padding-right: 20px;
     justify-content: flex-end;
-    
+    height: $headerHeight;
+
     & a {
         color: $petrol;
         margin-left: 10px;
@@ -50,9 +52,17 @@
     flex: 3;  
     display: flex;
     font-weight: bold;
-    justify-content: space-between;  /* Distributes the links evenly */
+    height: $headerHeight;
+    justify-content:left;  /* Distributes the links evenly */
     align-items: center;  /* Vertical alignment */
     box-sizing: border-box; /* So that padding and border are included in the width */
     text-transform: uppercase;
-    padding-left: 20px;
+    padding-left: -20px;
+}
+
+.avatar{
+    transform: scale(0.25);
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-right: -50px;
 }

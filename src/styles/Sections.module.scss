@@ -79,4 +79,16 @@
     text-shadow: 2px 2px 20px $colourUp, 1px 1px 10px gray;
 }
 
+.menuTitleFull{
+    position: relative;
+    color: white;
+    background-color: $petrol;
+    padding: 0px 30px;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 50px;
+    text-shadow: 2px 2px 20px $colourDown, 1px 1px 10px gray;
+}
+
 

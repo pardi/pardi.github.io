@@ -24,6 +24,7 @@ function App() {
           <Work cvItems={data.cvEntries}/>
         </div>
         <div className={styles.sectionAnchor} id="projects-anchor" />
+        <h1 className={styles.menuTitleFull}>PROJECTS</h1>
         <div id="projects" className={styles.projectsFull}>
           <Carousel projList={data.projects} />
         </div> 

@@ -7,9 +7,12 @@ const Header = ({ menu }) => {
     <>
     <div className={styles.headerShadow} /> 
     <div className={styles.header}>
-        <p className={styles.left}>
-            Tommaso Pardi 
-        </p>
+        <div className={styles.left}>
+          <img className={styles.avatar} src="tommaso_artface.png" alt="tommaso avatar"/>
+          <p>
+              Tommaso Pardi 
+          </p>
+        </div>
         <nav className={styles.right}>
             {
               menu.map((entry) => {

@@ -10,16 +10,16 @@
                 "text": "Text2"
             },
             {
-                "img": "https://picsum.photos/id/2/400",
-                "text": "Text3"
+                "img": "yadq400.png",
+                "text": "YADQ: yet another double quaternion library"
             },
             {
-                "img": "https://picsum.photos/id/3/400",
-                "text": "Text4"
+                "img": "fabrik400s.png",
+                "text": "Fabrik: a web implementation"
             },
             {
                 "img": "fabrik400.png",
-                "text": "Text5"
+                "text": "Fabrik: a web implementation"
             }
         ],
     "cvEntries": 
