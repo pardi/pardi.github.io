@@ -13,7 +13,7 @@ export const Work = ({ cvItems }) => {
                 {
                     cvItems.map( (item, index) => {
                         return (<>
-                        <li key={index} className={(activeCard === index? styles.textBoxActive: styles.textBox)} onMouseEnter={()=>setActiveCard(index)} onMouseLeave={()=> setActiveCard(-1)}>
+                        <li key={"cvIt" + index} className={(activeCard === index? styles.textBoxActive: styles.textBox)} onMouseEnter={()=>setActiveCard(index)} onMouseLeave={()=> setActiveCard(-1)}>
                             <h2>{item.role}</h2>
                             <h3><small>{item.period}</small> - {item.company}</h3>
                             <p>{item.description}</p>
