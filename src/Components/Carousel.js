@@ -20,7 +20,7 @@ const Carousel = ({ projList }) => {
     const autoPlayRef = useRef();
     autoPlayRef.current = autoPlay;
 
-    const loopTimeMs = 3000; 
+    const loopTimeMs = 3000.0; 
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -50,7 +50,7 @@ const Carousel = ({ projList }) => {
             <div className={styles.carouselWrapper}>
                 {
                     projList.map((proj, index) => {
-                        return <Card img={proj.img} text={proj.text} state={idxActive === index? "active": idxLeft === index? "left": idxRight === index? "right": "hidden"} />
+                        return <Card img={proj.img} text={proj.text} address={proj.address} state={idxActive === index? "active": idxLeft === index? "left": idxRight === index? "right": "hidden"} />
                     })
                 }
             </div>

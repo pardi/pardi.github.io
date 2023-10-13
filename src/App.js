@@ -1,44 +1,27 @@
-import { Fabrik } from "./pages/Fabrik";
+import { FabrikPage } from "./pages/FabrikPage";
+import { YadqPage } from "./pages/YadqPage";
 import { NoPage } from "./pages/NoPage";
-import { Layout } from "./pages/Layout";
+import { Layout } from "./Components/Layout";
+import { HomePage } from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import data from "./data/data.json"
 
 function App() {
   
   return (
 	<>
 		<BrowserRouter>
-			<Routes>
-			  	<Route path="/" element={<Layout />} />
-				<Route path="fabrik" element={<Fabrik />} />
-				<Route path="*" element={<NoPage />} />
-			</Routes>
+			<Layout>
+				<Routes>
+					<Route path="/" element={<HomePage menu={data.menu.home} />} />
+					<Route path="/fabrikProj" element={<FabrikPage menu={data.menu.project} />} />
+					<Route path="/yadqProj" element={<YadqPage menu={data.menu.project} />} />
+					<Route path="*" element={<NoPage />} />
+				</Routes>
+			</Layout>
 		</BrowserRouter>
 	</>
   );
 }
 
 export default App;
-
-{/* <Header menu={data.menu}/>
-			<div className={styles.bodyContainer}>
-			<div className={styles.sectionAnchor} id="home-anchor" />
-			<div id="home" className={styles.homeFull}>
-				<Home wordsList={data.interests}/>
-			</div>
-			<div className={styles.sectionAnchor} id="work-anchor" />
-			<h1 className={styles.menuTitle}>WORK</h1>
-			<div id="work" className={styles.workEmpty}>
-				<Work cvItems={data.cvEntries}/>
-			</div>
-			<div className={styles.sectionAnchor} id="projects-anchor" />
-			<h1 className={styles.menuTitleFull}>PROJECTS</h1>
-			<div id="projects" className={styles.projectsFull}>
-				<Carousel projList={data.projects} />
-			</div> 
-			<div className={styles.sectionAnchor} id="about-anchor" />
-			<div id="about" className={styles.aboutEmpty}>
-				<About />
-			</div> 
-		</div>
- */}

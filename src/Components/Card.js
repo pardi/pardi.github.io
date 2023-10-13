@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from '../styles/Carousel.module.scss'
 
-const Card = ({ img, text, state }) => {
+const Card = ({ img, text, state, address }) => {
 
     const getStyle = (state) => {
         if (state === "active"){
@@ -20,10 +20,12 @@ const Card = ({ img, text, state }) => {
 
     return (
         <div className={getStyle(state)}>
-            <img src={img} className={styles.containerImg} alt="" />
-            <h3 className={styles.textBoxCard}>
-                {text}
-            </h3>
+            <a href={address}>
+                <img src={img} className={styles.containerImg} alt="" />
+                <h3 className={styles.textBoxCard}>
+                    {text}
+                </h3>
+            </a>
         </div>
     )
 }
@@ -32,6 +34,7 @@ Card.propTypes = {
     img: PropTypes.string,
     text: PropTypes.string,
     state: PropTypes.string,
+    address: PropTypes.string,
 }
 
 

@@ -16,7 +16,7 @@ const Header = ({ menu }) => {
         <nav className={styles.right}>
             {
               menu.map((entry) => {
-                return <a key={entry} href={"#" + entry + "-anchor"}>{entry}</a>
+                return <a key={entry.name} href={entry.address}>{entry.name}</a>
               })
             }
         </nav>

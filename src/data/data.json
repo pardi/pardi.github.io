@@ -3,23 +3,28 @@
         [
             {
                 "img": "https://picsum.photos/id/0/400",
-                "text": "Text1"
+                "text": "Text1",
+                "address": "/"
             },
             {
                 "img": "https://picsum.photos/id/1/400",
-                "text": "Text2"
+                "text": "Text2",
+                "address": "/"
             },
             {
                 "img": "yadq400.png",
-                "text": "YADQ: yet another double quaternion library"
+                "text": "YADQ: yet another double quaternion library",
+                "address": "/yadqProj"
             },
             {
                 "img": "fabrik400s.png",
-                "text": "Fabrik: a web implementation"
+                "text": "Fabrik: a web implementation",
+                "address": "/fabrikProj"
             },
             {
                 "img": "fabrik400.png",
-                "text": "Fabrik: a web implementation"
+                "text": "Fabrik: a web implementation",
+                "address": "/fabrikProj"
             }
         ],
     "cvEntries": 
@@ -80,12 +85,36 @@
 
         ],
     "menu":
-        [
-            "home",
-            "projects",
-            "work",
-            "about"
-        ],
+        {
+            "home": [
+                {
+                    "name": "home",
+                    "address": "#home-anchor" 
+                },
+                {
+                    "name": "projects",
+                    "address": "#projects-anchor" 
+                },
+                {
+                    "name": "work",
+                    "address": "#work-anchor" 
+                },
+                {
+                    "name": "about",
+                    "address": "#about-anchor" 
+                }
+            ],
+            "project": [
+                {
+                    "name": "home",
+                    "address": "/" 
+                },
+                {
+                    "name": "about",
+                    "address": "#about-anchor" 
+                }
+            ]
+        },
     "interests": 
         [
             "coding", 
