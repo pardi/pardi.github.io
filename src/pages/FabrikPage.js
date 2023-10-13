@@ -6,7 +6,7 @@ export const FabrikPage = ({ menu }) => {
     <>
       <Header menu={menu}/>
       <h1>Fabrik</h1>
-      <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+      <p>FabrikFabrikFabrikFabrik</p>
       <Robot />
     </>
   )

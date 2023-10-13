@@ -113,6 +113,16 @@
                     "name": "about",
                     "address": "#about-anchor" 
                 }
+            ],
+            "nopage": [
+                {
+                    "name": "home",
+                    "address": "/" 
+                },
+                {
+                    "name": "about",
+                    "address": "#about-anchor" 
+                }
             ]
         },
     "interests": 

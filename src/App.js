@@ -16,7 +16,7 @@ function App() {
 					<Route path="/" element={<HomePage menu={data.menu.home} />} />
 					<Route path="/fabrikProj" element={<FabrikPage menu={data.menu.project} />} />
 					<Route path="/yadqProj" element={<YadqPage menu={data.menu.project} />} />
-					<Route path="*" element={<NoPage />} />
+					<Route path="*" element={<NoPage menu={data.menu.nopage} />} />
 				</Routes>
 			</Layout>
 		</BrowserRouter>
