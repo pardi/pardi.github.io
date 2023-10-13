@@ -1,0 +1,52 @@
+@import 'Default.module.scss';
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1920px;
+    background-color: $petrol;
+    min-height: 500px;
+} 
+
+.image{
+    background-color: white;
+    min-width: 400px;
+    margin-left: 20px;
+    border-style: solid;
+    margin-right: 20px;
+    margin-bottom: 10px;
+} 
+
+.textContainer {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: justify;
+    & a{
+        font-family: monospace;
+        color: white;
+        font-weight: bold;
+    }
+
+    & h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px){
+    .project{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .image{
+        margin-top: 10px;
+    } 
+    
+    
+    .textContainer {
+        margin-left: 20px;
+    }
+    
+}

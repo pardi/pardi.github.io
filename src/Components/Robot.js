@@ -118,7 +118,7 @@ function inverseKinematics (jntCoordinates, eePosition) {
     );
 }
 
-const Robot = () => {
+const Robot = ({ className }) => {
 
     const [mouseCoordinates, setMouseCoordinates] = useState({x:0, y:0})
 
@@ -145,7 +145,7 @@ const Robot = () => {
 
     return (
 
-    <div>
+    <div className={className}>
         <svg className="robot joint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
         {   
             test()
