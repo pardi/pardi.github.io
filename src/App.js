@@ -10,7 +10,7 @@ function App() {
   
   return (
 	<>
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Layout>
 				<Routes>
 					<Route path="/" element={<HomePage menu={data.menu.home} />} />

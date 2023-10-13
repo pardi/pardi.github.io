@@ -7,7 +7,7 @@ export const Layout = ({ children }) => {
         <main>{children}</main>
         <div className={styles.sectionAnchor} id="about-anchor" />
         <footer id="about" className={styles.aboutEmpty}>
-            <h1 className={styles.menuTitle}>ABOUT</h1>
+            {/* <h1 className={styles.menuTitle}>ABOUT</h1> */}
             <About />
         </footer> 
       </>
