@@ -4,7 +4,7 @@ import ProjectLayout from '../Components/ProjectLayout'
 import styles from '../styles/Global.module.scss'
 
 
-export const FabrikPage = ({ menu }) => {
+export const FabrikPage = ({ menu, link }) => {
 
   const description = (
   <> 
@@ -22,7 +22,8 @@ export const FabrikPage = ({ menu }) => {
     <p>
       This project aimed to implement fabrik for a 2d kinematic chains with only revolute joints using React components.
     </p>
-    <a href='https://github.com/pardi'>github code</a>            
+    <p>Language: React </p>
+    <a href={link}>github code</a>            
   </>);
 
   return (
