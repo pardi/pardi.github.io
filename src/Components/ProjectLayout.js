@@ -1,5 +1,4 @@
 import styles from '../styles/ProjectLayout.module.scss'
-import Robot from '../Components/Robot'
 
 const ProjectLayout = ({ firstDiv_children, secondDiv_children }) => {
   return (
