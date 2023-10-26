@@ -11,7 +11,7 @@
     align-items: center;
     background-color: white;
     justify-content: space-between;
-    color: $petrol;
+    color: $col2;
     z-index: 1000;
 }
 
@@ -34,7 +34,7 @@
     height: $headerHeight;
 
     & a {
-        color: $petrol;
+        color: $col2;
         margin-left: 10px;
         font-weight: bold;
         text-transform: uppercase;
@@ -43,7 +43,7 @@
     & a:hover{
         font-size: x-large;
         text-decoration: overline;
-        color: $petrol
+        color: $col2;
     }
 
 }

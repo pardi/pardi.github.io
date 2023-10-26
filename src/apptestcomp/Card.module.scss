@@ -1,0 +1,14 @@
+.carouselContainer {
+    overflow: hidden;
+    width: 500px; /* or whatever width you want */
+}
+
+.carouselSlide {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.carouselImage {
+    width: 500px;
+    height: auto;
+}

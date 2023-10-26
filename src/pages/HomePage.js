@@ -21,8 +21,8 @@ export const HomePage = ({ menu }) => {
 								<Work cvItems={data.cvEntries}/>
 						</div>
 						<div className={styles.sectionAnchor} id="projects-anchor" />
-						<h1 className={styles.menuTitleFull}>PROJECTS</h1>
-						<div id="projects" className={styles.projectsFull}>
+						<h1 className={styles.menuTitle}>PROJECTS</h1>
+						<div id="projects" className={styles.projects}>
 								<Carousel projList={data.projects} />
 						</div> 
 				</div>
