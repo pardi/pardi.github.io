@@ -15,7 +15,7 @@ function App() {
 			<Layout>
 				<Routes>
 					<Route path="/" element={<HomePage menu={data.menu.home} />} />
-					<Route path="/fabrikProj" element={<FabrikPage menu={data.menu.project} link={data.projects[2].link}/>} />
+					<Route path="/fabrikProj" element={<FabrikPage menu={data.menu.project} link={data.projects[0].link}/>} />
 					<Route path="/yadqProj" element={<YadqPage menu={data.menu.project} link={data.projects[1].link}/>} />
 					<Route path="*" element={<NoPage menu={data.menu.nopage} />} />
 				</Routes>

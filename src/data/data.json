@@ -2,29 +2,24 @@
     "projects":
         [
             {
-                "img": "https://picsum.photos/id/1/400",
-                "text": "TRAC-IK: standlone implementation of TRAC-IK",
-                "address": "/",
-                "link": "https://github.com/pardi/trac_ik_lib_standalone"
-            },
-            {
-                "img": "yadq400.png",
+                "img": "img1.png",
                 "text": "YADQ: yet another double quaternion library",
                 "address": "/yadqProj",
                 "link": "https://github.com/pardi/yadq"
             },
             {
-                "img": "fabrik400s.png",
+                "img": "img2.png",
                 "text": "Fabrik: a web implementation",
                 "address": "/fabrikProj",
                 "link": "https://github.com/pardi/pardi.github.io/blob/master/src/Components/Robot.js"
             },
             {
-                "img": "fabrik400.png",
-                "text": "Robot Simulator: standalone VTK simulator",
-                "address": "/robotSimProj",
-                "link": "https://github.com/pardi/robot_simulator"
+                "img": "img3.png",
+                "text": "Fabrik: a web implementation",
+                "address": "/fabrikProj",
+                "link": "https://github.com/pardi/pardi.github.io/blob/master/src/Components/Robot.js"
             }
+
         ],
     "cvEntries": 
         [

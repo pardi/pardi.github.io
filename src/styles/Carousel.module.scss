@@ -27,7 +27,7 @@
   background-color: white;
   border: 10px;
   padding: 10px;
-  transform: scale(0.5) translate(-50%, 0%);
+  transform: scale(0.4) translate(-50%, 0%);
   border-radius: 5%;
   transition: 0.5s ease-in-out;
 }
@@ -37,7 +37,8 @@
 }
 
 .containerImg{
-  border-radius: 5%;
+  border-radius: 0%;
+  transform: scale(0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
 }
 
