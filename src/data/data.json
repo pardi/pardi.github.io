@@ -18,6 +18,12 @@
                 "text": "Fabrik: a web implementation",
                 "address": "/fabrikProj",
                 "link": "https://github.com/pardi/pardi.github.io/blob/master/src/Components/Robot.js"
+            },
+            {
+                "img": "img3.png",
+                "text": "df: a web implementation",
+                "address": "/fabrikProj",
+                "link": "https://github.com/pardi/pardi.github.io/blob/master/src/Components/Robot.js"
             }
 
         ],

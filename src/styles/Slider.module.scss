@@ -11,9 +11,9 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  border-width: 2px;
-  border-color: blue;
-  border-style: solid;
+  // border-width: 2px;
+  // border-color: blue;
+  // border-style: solid;
   
 }
 
@@ -25,22 +25,43 @@
   justify-content: center;
   align-items: center;
 
-  border-width: 2px;
-  border-style: solid;
-  border-color: red;
+  // border-width: 2px;
+  // border-style: solid;
+  // border-color: red;
+  overflow:hidden;
 }
-
-.imgContainer{
+@mixin imgContainer{
   display: block;
   width: 250px;
   height: 350px;
   border: 1px solid #dcdcdc;
+  flex-shrink: 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease-in-out;
 
   &:not(:last-child){
     margin-right: 10px;
   }
 }
+
+
+.imgContainerActive{
+  @include imgContainer;
+}
+
+.imgContainerLeft{
+  @include imgContainer;
+}
+
+.imgContainerRight{
+  @include imgContainer;
+}
+
+.imgContainerHidden{
+  @include imgContainer;
+  opacity: 0%;
+}
+
 
 .img{
   width:100%;
@@ -71,17 +92,17 @@
   
 }
 
-.btnLeftDiv{
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-}
+// .btnLeftDiv{
+//   border-width: 2px;
+//   border-style: solid;
+//   border-color: black;
+// }
 
-.btnRightDiv{
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-}
+// .btnRightDiv{
+//   border-width: 2px;
+//   border-style: solid;
+//   border-color: black;
+// }
 
 .btnLeft{
   @include btn;
@@ -93,127 +114,17 @@
   margin-left: 10px;
 }
 
-// @media (max-width: $minScreenSize){
-
-//   .containerImg{ 
-//     transform: scale(0.5);
-//   }
+@media (max-width: 920px){
   
-//   .sliderWrapper{
-//     max-width: 50%;
-//     overflow: hidden;
-//   }
-
-//   .slider{
-//     height: 250px;    
-//   }
+  .imgContainerRight{
+    opacity: 0%;
+    z-index: -1;
+  }
   
-// }
-
-
-
-
-
-
-// .imgContainer{
-//   display: block;
-//   max-width: 100%;
-//   transform: scale(95%);
-// }
-
-// .bkImgContainer{ 
-//   border-style: solid;
-//   border-color: green;
-//   border-width: 2px;
-//   max-width: 500px;
-//   height: 600px;
-//   border: 1px solid #dcdcdc;
-//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
-// }
-
-
-
-
-
-
-
-
-
-
-
-// @mixin containerCard{
-//   display: flex;
-//   background-color: white;
-//   border-style: solid;
-//   border-color: red;
-//   transition: 0.5s ease-in-out;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // .containerCard{
-// //   @include containerCard;
-// // }
-
-// // .containerImg{
-// //   border-radius: 0%;
-// //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
-// // }
-
-// // // .containerCardLeft{
-// // //   @include containerCard;
-// // //   transform: translate(-100%, 5%);
-// // // }
-
-// // // .containerCardRight{
-// // //   @include containerCard;
-// // //   transform: translate(0%, 5%)
-// // // }
-
-// .containerCardActive{
-//   @include containerCard;
-//   transform: scale(0.5) translateX(-25%);
-// }
-
-// // // .containerCardHidden{
-// // //   @include containerCard;
-// // //   opacity: 0%;
-// // // }
-
-// // .textBoxCard{
-// //   align-items: center;
-// //   color: $col2  
-// // }
-
-@media (max-width: $minScreenSize){
-
-  .containerImg{ 
-    transform: scale(0.5);
+  .imgContainerLeft{
+    opacity: 0%;
+    z-index: -1;
   }
   
   
-  // .containerCardActive{
-  //   transform: translate(-50%, 0%) scale(0.8);
-  // }
-  // .containerCardRight{
-  //   opacity: 0%;
-  //   transform: translate(-50%) scale(0.1);
-
-  // }
 }

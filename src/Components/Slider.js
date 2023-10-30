@@ -44,6 +44,7 @@ const Slider = ({ projList }) => {
         setIdxLeft((idxLeftRef.current - 1 + projList.length) % projList.length)
         setIdxRight((idxRightRef.current - 1 + projList.length ) % projList.length)
     }
+
     return (
 		<div className={styles.slider}  onMouseEnter={() => setAutoPlay(false)} onMouseLeave={() => setAutoPlay(false)}>
 
@@ -51,18 +52,13 @@ const Slider = ({ projList }) => {
                 <button className={styles.btnLeft} onClick={shiftLeft} />
             </div>
             
-            {/* <div className={styles.sliderWrapper}>
-                <div className={styles.imgContainer}>
-                    <img className={styles.img} src={projList[0].img} alt="" />
-                    <p className={styles.imgTitle}>pasdfsdf</p>
-                </div>
-            </div> */}
-
             <div className={styles.sliderWrapper}>
-                {
-                    projList.map((proj, index) => {
-                        return <SliderCard img={proj.img} text={proj.text} address={proj.address} state={idxActive === index? "active": idxLeft === index? "left": idxRight === index? "right": "hidden"} />
-                    })
+                {    
+                    <>
+                    <SliderCard img={projList[idxLeft].img} text={projList[idxLeft].text} address={projList[idxLeft].address} state="left" />
+                    <SliderCard img={projList[idxActive].img} text={projList[idxActive].text} address={projList[idxActive].address} state="active" />
+                    <SliderCard img={projList[idxRight].img} text={projList[idxRight].text} address={projList[idxRight].address} state="right" />
+                    </>              
                 }
             </div>
 
@@ -72,11 +68,6 @@ const Slider = ({ projList }) => {
 		</div>
     )
 }
-
-// <div className={styles.imgContainer}>
-// <img className={styles.img} src={projList[0].img} alt="" />
-// <p className={styles.imgTitle}>pasdfsdf</p>
-// </div>
 
 
 Slider.propTypes = {

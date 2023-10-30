@@ -5,28 +5,26 @@ const SliderCard = ({ img, text, state, address }) => {
 
     const getStyle = (state) => {
         if (state === "active"){
-            return styles.containerCardActive;
+            return styles.imgContainerActive;
         }
         if (state === "left"){
-            return styles.containerCardLeft;
+            return styles.imgContainerLeft;
         }
         if (state === "right"){
-            return styles.containerCardRight;
+            return styles.imgContainerRight;
         }
         if (state === "hidden"){
-            return styles.containerCardHidden;
+            return styles.imgContainerHidden;
         }
     }
 
     return (
-        <div className={styles.imgContainer}>
+        <div className={getStyle(state)}>
             <img className={styles.img} src={img} alt="" />
             <p className={styles.imgTitle}>{text}</p>
         </div>
     )
 }
-
-
 
 
 SliderCard.propTypes = {
