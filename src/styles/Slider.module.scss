@@ -42,6 +42,15 @@
   &:not(:last-child){
     margin-right: 10px;
   }
+
+  p{
+    margin:auto;
+    width: 90%;
+    font-size: large;
+    color: $col2;
+    font-weight: bold;
+    text-align: center
+  }
 }
 
 

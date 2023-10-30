@@ -20,8 +20,10 @@ const SliderCard = ({ img, text, state, address }) => {
 
     return (
         <div className={getStyle(state)}>
-            <img className={styles.img} src={img} alt="" />
-            <p className={styles.imgTitle}>{text}</p>
+            <a href={address}>
+                <img className={styles.img} src={img} alt="" />
+                <p className={styles.imgTitle}>{text}</p>
+            </a>
         </div>
     )
 }
