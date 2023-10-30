@@ -2,6 +2,7 @@ import styles from '../styles/ProjectLayout.module.scss'
 
 const ProjectLayout = ({ firstDiv_children, secondDiv_children }) => {
   return (
+    
     <div className={styles.project}> 
         <div className={styles.image}>
             {firstDiv_children}

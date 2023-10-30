@@ -7,7 +7,7 @@ export const YadqPage = ({ menu , link}) => {
 
   const description = (
     <> 
-      <h1>Description</h1>
+      <h1>YADQ: Yet Another Double Quaternion</h1>
       <p>
       Poses represent the position and orientation of a vector in a given reference frame. 
       </p>

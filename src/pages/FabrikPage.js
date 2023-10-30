@@ -8,7 +8,7 @@ export const FabrikPage = ({ menu, link }) => {
 
   const description = (
   <> 
-    <h1>Description</h1>
+    <h1>FABRIK</h1>
     <p>
     The robot inverse kinematics is one of the most common problem to solve when working with robots.
     It refers to how obtain the joint angles for the robot given the cartesian pose (position and orientation) of a part of the robot, usually the end-effector.

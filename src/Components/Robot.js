@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from '../styles/Robot.module.scss'
 
 const numberJoints = 6
 const armLength = 5;
@@ -31,8 +32,8 @@ function fk (jntCoord){
     let robotDrawing = []
 
     for (let idxJnt = 0; idxJnt < jntCoord.length - 1; ++idxJnt){
-        robotDrawing.push(<line key={'link-' + idxJnt} x1={jntCoord[idxJnt].x} y1={jntCoord[idxJnt].y} x2={jntCoord[idxJnt + 1].x} y2={jntCoord[idxJnt + 1].y} stroke="red" />);
-        robotDrawing.push(<circle key={'jnt-' + idxJnt} cx={jntCoord[idxJnt].x} cy={jntCoord[idxJnt].y} r={jointSize} fill="#f36464" />);
+        robotDrawing.push(<line key={'link-' + idxJnt} x1={jntCoord[idxJnt].x} y1={jntCoord[idxJnt].y} x2={jntCoord[idxJnt + 1].x} y2={jntCoord[idxJnt + 1].y} stroke="#176b87" />);
+        robotDrawing.push(<circle key={'jnt-' + idxJnt} cx={jntCoord[idxJnt].x} cy={jntCoord[idxJnt].y} r={jointSize} fill="#64ccc5" />);
     }
 
     return robotDrawing;
@@ -145,8 +146,8 @@ const Robot = ({ className }) => {
 
     return (
 
-    <div className={className}>
-        <svg className="robot joint" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
         {   
             test()
         }
